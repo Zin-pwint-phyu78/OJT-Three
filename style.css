@@ -1,0 +1,588 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inter:wght@200;300;500&family=Joan&family=Lobster&family=Nuosu+SIL&family=Puppies+Play&family=Redressed&family=Syne+Tactile&display=swap');
+
+:root{
+    background-color: aliceblue;
+    --site-color:gray;
+    
+}
+
+
+.logo{
+    margin-left: 40px;
+}
+.logo img{
+   
+    margin-top: 20px;
+}
+
+
+section{
+    min-width: 50%;
+    height: 95vh;
+    background: url(img/slider1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.rightSite ul{
+    list-style: none;
+    position: relative;
+    float: inline-end;
+    margin-right: 50px;
+    margin-top: -30px;
+    
+}
+.rightSite ul li{
+    display: inline-block;
+    margin-right: 20px;
+    /* transition: all 0.5s ease-in-out; */
+}
+.rightSite ul li a{
+    text-decoration: none;
+    color:#a00436;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Joan', serif;
+    line-height: 20px;
+    margin: 10px;
+    font-style: italic;
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+}
+.rightSite ul ul{
+    position: absolute;
+    top: 45px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+.rightSite ul ul li{
+    /* display: block; */
+    width: 150px;
+    height: 40px;
+    background-color:palevioletred;
+    /* border: 1px solid none; */
+    border-radius: 10px;
+    display: list-item;
+    /* margin: 5px; */
+}
+.rightSite ul ul li a{
+    text-align: center;
+    padding-top: 10px;
+    display: list-item;
+
+}
+.rightSite ul li a:hover{
+    opacity: 0.8;
+    
+}
+.rightSite ul li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease-out;
+}
+
+/* hambarger Menu */
+.line1,.line2,.line3,.hambarger,.rightSiteDisplay,.rightSite{
+    transition: all 0.5s ease-in-out;
+}
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    background-color:none;
+    position: relative;
+    margin-top: -38px;
+    /* display: none; */
+}
+.humbargerMenuBar{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    
+}
+.hambarger{
+    width: 40px;
+    height: 5px;
+    background-color: #393030;
+    margin: 5px 0px;
+    border-radius: 20px;
+    display: none;
+}
+.hideLine2{
+    opacity: 0;
+}
+.rotateplus{
+    transform: rotate(45deg) translate(4px,10px) ;
+}
+.rotateminus{
+    transform: rotate(-45deg) translate(4px,-10px);
+}
+
+/* Our Magazine */
+.ourMagazine{
+    margin-top: 50px;
+}
+h1{
+    font-family:'Joan', serif;
+    margin-left: 50px;
+    color:#a00436;
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+    font-style: italic;
+    font-weight: bold;
+}
+ .ourMagazine p{
+    width: 900px;
+    height: 4px;
+    background-color:palevioletred;
+    margin-top: 33px;
+  }
+button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: palevioletred;
+    margin-left: 138px;
+    margin-top: 8px;
+    color: #a00436;
+}
+
+/* Catagories Menu */
+
+.catagoriesMenu{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.card{
+    width: 20rem;
+}
+.card img{
+    height: 280px;
+    cursor: pointer;
+}
+.btn{
+    background-color: palevioletred;
+    margin-top: 20px;
+    color: #a00436;
+    padding: 10px;
+}
+.card-title{
+    color: #a00436;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.card-text{
+    color: palevioletred;
+}
+
+
+/* Others */
+.othersImg img{
+    width: 170px;
+    height: 200px;
+    gap: 10px;
+    margin: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+}
+.othersImg{
+    margin-top: 40px;
+}
+.others{
+    margin-top: 100px;
+    /* background-color: palevioletred; */
+    height: 80vh;
+    background-color: #393030;
+}
+.others h1{
+    color: #a00436;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.othersText{
+    margin-top: 60px;
+    height: 70vh;
+    color: aliceblue;
+    
+}
+.othersText p{
+    text-indent: 10%;
+}
+.recommandation{
+    margin-top: 25%;
+    margin-left: 30px;
+}
+.recommandation label{
+    display: block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-bottom: 20px;
+    color: palevioletred;
+    margin-left: 10px;
+}
+.recommandation input{
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
+.recommandation button{
+    margin-left: 35%;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+/* Others End */
+
+/* About */
+.about{
+    margin-top: 100px;
+    height: 200px;
+}
+.about h1{
+    color: #a00436;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.about p{
+    color:palevioletred;
+    text-align: center;
+}
+.aboutImg{
+    margin-top: 100px;
+    height: 500px;
+    background-color:#393030;
+    
+}
+
+.aboutImg img{
+    width: 220px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 60px;
+    position: relative;
+    /* border-radius: 20px; */
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+}
+/* About End */
+
+/* Media Query */
+@media (max-width:1200px) {
+    .rightSite ul{
+        margin-right: 50px;
+    }
+    .rightSite ul li a{
+        color: pink;
+    }
+    .ourMagazine h1 {
+        font-family: 'Joan', serif;
+        margin-left: 50px;
+        color: #a00436;
+        text-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 9px;
+      }
+      .ourMagazine p{
+        width: 800px;
+      }
+      .ourMagazine button{
+        font-size: 15px;
+      }
+      .card {
+        width: 15rem;
+      }
+      .card img{
+        height: 200px;
+      }
+      .others{
+        height: 60vh;
+      }
+      .othersImg img {
+        width: 150px;
+        height: 186px;
+        margin: 10px;
+      }
+      .othersText p {
+        text-indent: 10%;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+      .recommandation {
+        margin-top: 20%;
+        margin-left: 30px;
+      }
+      .recommandation button {
+        margin-left: 30%;
+        padding: 10px 30px;
+        border-radius: 20px;
+      }
+      .aboutImg img {
+        width: 170px;
+        height: 225px;
+        margin-top: 100px;
+        margin-left: 54px;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+      }
+      .aboutImg{
+        height: 450px;
+      }
+    
+}
+
+/* 992px */
+@media (max-width:992px) {
+    .ourMagazine h1 {
+        font-family: 'Joan', serif;
+        margin-left: 50px;
+        color: #a00436;
+        text-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 27px;
+        margin-top: 14px;
+      }
+      .ourMagazine p {
+        width: 700px;
+      }
+      .ourMagazine button {
+        font-size: 11px;
+        padding: 10px;
+        margin-top: 16px;
+      }
+      .card {
+        width: 12rem;
+      }
+      .card img{
+        height: 150px;
+      }
+      .card-text {
+        color: palevioletred;
+        font-size: 12px;
+      }
+      .btn {
+        background-color: palevioletred;
+        margin-top: 0px;
+        color: #a00436;
+        padding: 6px;
+      }
+      .others{
+        background-color: #fff;
+      }
+      .othersText p {
+        text-indent: 10%;
+        font-size: 12px;
+        margin-top: 20px;
+        color: palevioletred;
+      }
+      .othersImg {
+        margin-top: -4px;
+        margin-left: 55px;
+      }
+      .recommandation input {
+        padding: 11px;
+        border-radius: 20px;
+        border: 1px solid palevioletred;
+      }
+      .recommandation button {
+        margin-left: 0%;
+        padding: 10px 25px;
+        border-radius: 20px;
+      }
+      .about {
+        margin-top: 152px;
+        height: 0px;
+      }
+      .aboutImg img {
+        width: 139px;
+        height: 214px;
+        margin-top: 100px;
+        margin-left: 45px;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+      }
+}
+
+/* 768px */
+@media (max-width:768px) {
+    .logo img{
+        width: 100px;
+    }
+    .rightSite ul li a {
+        color: pink;
+        font-size: 20px;
+      }
+      .rightSite ul ul li a {
+        text-align: center;
+        padding-top: 10px;
+        display: list-item;
+        font-size: 18px;
+      }
+      .ourMagazine h1 {
+        font-family: 'Joan', serif;
+        margin-left: 50px;
+        color: #a00436;
+        text-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .ourMagazine p{
+        width: 550px;
+        height: 2px;
+      }
+      .ourMagazine button {
+        font-size: 9px;
+        padding: 5px;
+        margin-top: 16px;
+      }
+      .btn {
+        background-color: palevioletred;
+        margin-top: 0px;
+        color: #a00436;
+        padding: 4px;
+        font-size: 12px;
+      }
+      .card-text {
+        color: palevioletred;
+        font-size: 9px;
+      }
+      .card-title {
+        color: #a00436;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      .card img {
+        height: 140px;
+      }
+      .card {
+        width: 10rem;
+      }
+      .othersImg {
+        margin-top: -4px;
+        margin-left: 88px;
+      }
+      .othersText {
+        margin-top: 35px;
+        height: 70vh;
+        color: aliceblue;
+      }
+      .othersText p{
+        display: none;
+      }
+      .recommandation {
+        margin-top: 0;
+        margin-left: 30px;
+      }
+      .recommandation label {
+        display: inline;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        color: palevioletred;
+        margin-left: 10px;
+      }
+      .recommandation input {
+        padding: 6px;
+        border-radius: 20px;
+        border: 1px solid palevioletred;
+        margin-left: 180px;
+        margin-top: 38px;
+      }
+      .recommandation button {
+        margin-left: 0%;
+        padding: 7px 20px;
+        border-radius: 20px;
+      }
+      .aboutImg {
+        margin-top: 100px;
+        height: 500px;
+        background-color: #fff;
+      }
+      .aboutImg img {
+        width: 166px;
+        height: 214px;
+        margin-top: 27px;
+        margin-left: 71px;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+        text-align: center;
+      }
+}
+
+/* Media Query */
+
+@media (max-width:576px) {
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    .humbargerMenuBar{
+        display: block;
+        
+    }
+    .logo img{
+        width: 100px;
+        
+    }
+    .rightSiteDisplay{
+        opacity: 0;
+    }
+
+    .rightSite ul{
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        flex-wrap: wrap;
+        /* opacity: 0; */
+    }
+    .rightSite ul li{
+        display: block;
+        margin: 20px auto;
+        
+    }
+    .rightSite ul {
+        display: block;
+        position: absolute;
+        top: 26%;
+        left: 39%;
+    }
+    .rightSite ul ul {
+        position: absolute;
+        padding: 6px;
+        opacity: 0;
+        visibility: hidden;
+        top: -20%;
+        left: 100%;
+      }
+      .ourMagazine{
+        display: none;
+      }
+      .card {
+        width: 12rem;
+        margin-bottom: 20px;
+      }
+      .others{
+        display: none;
+      }
+    
+}
+
+/* Screen Size 480px */
+
+    
+
+
+
+
